@@ -1,0 +1,9 @@
+name: NextCore
+version: 1.0.0
+main: br.com.nextplugins.core.nextcore.NextCore
+api-version: 1.17
+prefix: NextCore
+load: STARTUP
+authors: [ NextPlugins ]
+description: O core dos plugins da Next.
+website: https://nextplugins.com.br
