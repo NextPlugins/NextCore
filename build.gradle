@@ -47,6 +47,8 @@ shadowJar {
 
     relocate('co.aikar.commands', "${libPackage}.acf")
 
+    /** Relocate libs to another plugins **/
+
     relocate('com.henryfabio.minecraft.configinjector', "${libPackage}.configinjector")
     relocate('com.henryfabio.minecraft.inventoryapi', "${libPackage}.inventoryapi")
     relocate('com.henryfabio.sqlprovider', "${libPackage}.sqlprovider")
@@ -65,4 +67,7 @@ shadowJar {
 
 compileJava {
     options.encoding('UTF-8')
+
+    targetCompatibility('1.8')
+    sourceCompatibility('1.8')
 }

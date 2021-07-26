@@ -16,6 +16,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 @CommandAlias("next")
+@Description("Lista todos os plugins feitos pela NextPlugins.")
 public final class NextCommand extends BaseCommand {
 
     private final JavaPlugin plugin;
@@ -26,7 +27,6 @@ public final class NextCommand extends BaseCommand {
 
     @Default
     @CommandPermission("nextcore.command.next")
-    @Description("Lista todos os plugins feitos pela NextPlugins.")
     public void handle(CommandSender sender) {
         final @NotNull Plugin[] plugins = plugin.getServer().getPluginManager().getPlugins();
 
